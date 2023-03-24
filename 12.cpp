@@ -25,11 +25,12 @@ string add_brackets(string ec){
     return new_ec;
 }
 
-int solve_ecuation(string &ec, int start, int end){
+float solve_ecuation(string &ec, int start, int end){
 
     // cout << "Solve: " <<  ec.substr(start, end-start) << "\t" << (end-start) << endl;
 
-    int parentesis, i, factor = 1;
+    int parentesis, i;
+    float factor = 1;
 
     // Ignore sign + at start of the ecuation
     // Sign - at start is important
@@ -81,7 +82,7 @@ int solve_ecuation(string &ec, int start, int end){
     if (ec[start] == '(' && ec[end-1] == ')') return solve_ecuation(ec, start+1, end-1) * factor;
 
     // Opc 2: All the expresion is a number
-    return stoi(ec.substr(start, end-start)) * factor;
+    return stof(ec.substr(start, end-start)) * factor;
 }
 
 int main(){
