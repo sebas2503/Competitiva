@@ -1,0 +1,18 @@
+Integrantes:
+- Luis Arroyo Pinto
+- Luigi Cabrera
+- Mauricio Colque Morales
+- Sebastian Paz Ballon
+
+1)  O(n)
+2)  O(n)
+3)  O(1)
+4)  O(nlog(n))
+5)  O(nlog(n))
+6)  O(log(n))
+7)  O(n!)
+8)  O(2^n)
+9)  O(log(n))
+10) O(n)
+11) O(sqrt(n))
+12) O(n * b)	// b = numero de operadores dentro de la string
